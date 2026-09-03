@@ -196,6 +196,38 @@ h2 em {
 	display: flex;
 }
 
+.music-section {
+	padding: 20px 0;
+}
+
+.music-content {
+	text-align: center;
+}
+
+.music-content h2 {
+	margin-bottom: 28px;
+}
+
+.music-content a {
+	display: inline-block;
+	color: #1e2b2b;
+	font-size: 1.1rem;
+	text-decoration: none;
+}
+
+.music-content a:hover {
+	color: #e66d54;
+}
+
+.music-content img {
+	display: block;
+	width: 220px;
+	height: 220px;
+	margin: 0 auto 14px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
 .skill {
 	width: 33.33%;
 	padding: 24px 10px;
