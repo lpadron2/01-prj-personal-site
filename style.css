@@ -1,1 +1,364 @@
-/* Add you CSS here */
+/* These basic rules keep spacing predictable across browsers. */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	color: #1e2b2b;
+	background: beige;
+	font-family: Georgia, 'Times New Roman', serif;
+	line-height: 1.6;
+}
+
+a {
+	color: inherit;
+}
+
+.site-header,
+.section-wrap {
+	width: 88%;
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 96%;
+	max-width: 1400px;
+	background-color: #dceef5;
+	padding: 28px 0;
+}
+
+.logo {
+	color: #e66d54;
+	font-family: Arial, sans-serif;
+	font-size: 1.3rem;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	text-decoration: none;
+}
+
+.logo span {
+	color: #1e2b2b;
+}
+
+nav a {
+	margin-left: 28px;
+	color: #61706c;
+	font-family: Arial, sans-serif;
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: 0.12em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover,
+.site-footer a:hover {
+	color: #e66d54;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 96%;
+	max-width: 1400px;
+	min-height: auto;
+	padding: 70px 0 110px;
+	background-image: linear-gradient(rgba(244, 241, 233, 0.75), rgba(244, 241, 233, 0.75)), url("img/5tree-of-life-scaled.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-copy {
+	width: 100%;
+	padding-right: 0;
+	text-align: center;
+}
+
+.eyebrow,
+.section-label {
+	color: #e66d54;
+	font-family: Arial, sans-serif;
+	font-size: 0.72rem;
+	font-weight: bold;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.eyebrow {
+	color: #000000;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	max-width: 650px;
+	margin: 24px auto 18px;
+	font-size: clamp(2.4rem, 5vw, 4.5rem);
+	font-weight: normal;
+	letter-spacing: -0.03em;
+	line-height: 0.98;
+}
+
+.hero-text {
+	max-width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	color: black;
+	font-size: 1.15rem;
+}
+
+.hero-photo {
+	position: relative;
+	width: 300px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.hero-photo img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
+	object-position: center 25%;
+	border-radius: 50%;
+}
+
+.content-section {
+	display: block;
+	padding: 100px 0;
+	border-top: 1px solid #d8d8ca;
+}
+
+#about {
+	padding: 20px 0;
+}
+
+#about .section-label {
+	margin-bottom: 10px;
+}
+
+#skills {
+	padding: 20px 0;
+}
+
+.section-label {
+	margin-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.section-content {
+	flex: 1;
+}
+
+h2 {
+	margin-bottom: 42px;
+	font-size: clamp(2.3rem, 4vw, 4.2rem);
+	font-weight: normal;
+	letter-spacing: -0.03em;
+	line-height: 1.02;
+	text-align: center;
+}
+
+h2 em {
+	color: #b9a9a5;
+	font-style: normal;
+}
+
+.bio-content {
+	max-width: 700px;
+	margin: 0 auto;
+	color: #61706c;
+	font-size: 1.15rem;
+	text-align: center;
+}
+
+.bio-content p {
+	margin-bottom: 0;
+}
+
+.skills-list {
+	display: flex;
+}
+
+.skill {
+	width: 33.33%;
+	padding: 24px 10px;
+	text-align: center;
+}
+
+.skill img {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto 12px;
+	object-fit: contain;
+}
+
+.skill strong {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.projects-section {
+	padding: 20px 0;
+}
+
+.project-list {
+	display: flex;
+	gap: 20px;
+}
+
+.project-card {
+	min-height: 300px;
+	width: 50%;
+	padding: 28px;
+	background: #fffdf8;
+}
+
+.project-card img {
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto 20px;
+	object-fit: contain;
+}
+
+.project-two {
+	background: #c9d8c3;
+}
+
+.project-two img {
+	mix-blend-mode: multiply;
+}
+
+.project-card h3 {
+	margin: 0 0 8px;
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+.project-card p {
+	max-width: 300px;
+	color: #61706c;
+}
+
+.site-footer a {
+	font-family: Arial, sans-serif;
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.site-footer a span {
+	margin-left: 8px;
+	font-size: 1rem;
+}
+
+.site-footer a img {
+	width: 18px;
+	height: 18px;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+.site-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 28px 0 40px;
+	border-top: 1px solid #d8d8ca;
+	color: #61706c;
+	font-family: Arial, sans-serif;
+	font-size: 0.75rem;
+}
+
+.site-footer p {
+	margin: 0;
+}
+
+/* On smaller screens, the two-column areas become easy-to-read stacks. */
+@media (max-width: 700px) {
+	.site-header,
+	.section-wrap {
+		width: 86%;
+	}
+
+	.site-header {
+		padding: 22px 0;
+	}
+
+	nav a {
+		margin-left: 12px;
+		font-size: 0.62rem;
+	}
+
+	.hero {
+		display: block;
+		min-height: auto;
+		padding: 55px 0 90px;
+	}
+
+	.hero-copy,
+	.hero-photo {
+		width: 100%;
+	}
+
+	.hero-copy {
+		padding-right: 0;
+	}
+
+	h1 {
+		font-size: 3.6rem;
+	}
+
+	.hero-photo {
+		max-width: 280px;
+		margin: 70px auto 25px;
+	}
+
+	.content-section,
+	.bio-content {
+		display: block;
+	}
+
+	.content-section {
+		padding: 20px 0;
+	}
+
+	.section-label {
+		margin-bottom: 10px;
+	}
+
+	.skill {
+		width: 100%;
+	}
+
+	.project-list {
+		display: block;
+	}
+
+	.project-card {
+		width: 100%;
+		margin-bottom: 16px;
+	}
+
+}
+
