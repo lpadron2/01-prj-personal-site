@@ -276,6 +276,14 @@ h2 em {
 	background: #c9d8c3;
 }
 
+.project-three {
+	background-color: #c9d8c3;
+}
+
+.project-one, .project-four, .project-five, .project-six {
+	background-color: #c9d8c3;
+}
+
 .project-two img {
 	mix-blend-mode: multiply;
 }
